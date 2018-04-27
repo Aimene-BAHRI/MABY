@@ -1,0 +1,12 @@
+{% extends 'medical/base.html' %}
+
+{% block content %}
+    <div class="post">
+        <a class="btn btn-default" href="{% url 'student_edit' pk=student.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <h1>{{ student.name }}</h1>
+        <h1>{{ student.prenom }}</h1>
+        <h1>{{ student.mail }}</h1>
+        <h1>{{ student.university }}</h1>
+        <h1>{{ student.speciality }}</h1>
+    </div>
+{% endblock %}

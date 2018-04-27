@@ -1,0 +1,13 @@
+{% extends 'medical/base.html' %}
+
+{% block content %}
+    <div class="post">
+        <a class="btn btn-default" href="{% url 'patient_edit' pk=patient.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <h1>{{ patient.name }}</h1>
+        <h1>{{ patient.prenom }}</h1>
+        <h1>{{ patient.mail }}</h1>
+        <h1>{{ patient.local_adress }}</h1>
+        <h1>{{ patient.age }}</h1>
+        <h1>{{ patient.sexe }}</h1>
+    </div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'medical/base.html' %}
+
+{% block content %}
+    <h1>New Doctor</h1>
+    <form method="POST" class="doctor-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}

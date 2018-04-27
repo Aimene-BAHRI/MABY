@@ -1,0 +1,10 @@
+body, html {
+    height: 100vh;
+    background-color: #42a5f5;
+}
+
+form {
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
